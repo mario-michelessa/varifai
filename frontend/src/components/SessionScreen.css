@@ -1,0 +1,44 @@
+/* SessionScreen.css */
+.session-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.session-input {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.session-button {
+    padding: 10px 15px;
+    width: 318px; /* Adjusted to match input width including border */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.session-button:hover {
+    background-color: #004494;
+}
+
+.session-button:active {
+    background-color: #003575;
+}
+
+.session-button:focus {
+    outline: none;
+}

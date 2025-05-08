@@ -1,0 +1,83 @@
+
+.image-grid {
+   display: grid;
+   grid-gap: 3px;
+}
+
+.image-grid img {
+    margin: 2px;
+    cursor: pointer;
+    border-radius:5px;
+    width: 100%;
+    height: 100%;
+   object-fit: contain;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: for dimming the background */
+    z-index: 1000;
+
+}
+
+.selected-image {
+    max-width: 80%; /* Ensure it's not too large for the screen */
+    max-height: 80%;
+    position: absolute; /* Position relative to the overlay */
+    /* transform: translate(+50%, +50%); Center the image at cursor position */
+}
+.overlay-text
+{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+.prompt-text { 
+    top: 10px;
+    left: 10px;
+}
+.labels-text { 
+    bottom: 10px;
+    left: 10px;
+}
+
+.img-container:hover .tooltip {
+    display: block;
+    top: 10px; /* Position slightly below the cursor */
+    left: 10px; /* Position slightly right to the cursor */
+}
+/* 
+.tooltip {
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    pointer-events: none;  /* Ensures that the tooltip does not interfere with mouse events 
+    font-size: 8pt;}  
+*/
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container:hover .tooltip {
+    display: block;
+}
+
+.image-grid {
+    position: relative;
+}
