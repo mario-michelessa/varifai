@@ -6,7 +6,7 @@ S1) Generate images from a simple prompt
 S2) Verify diversity across attributes like gender, style, or environment
 S3) Vary diversity by adjusting attribute distributions and resampling prompts
 
-![interface](./figures/interface.pdf)
+![interface](./interface.png)
 
 ## Requirements
 Requires Python 3+, diffusers, flask, Llama2 weights
