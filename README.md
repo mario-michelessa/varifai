@@ -2,9 +2,9 @@
 
 Varif.ai is an interactive web-based system for user-driven control over diversity in generative image models. 
 
-S1) Generate images from a simple prompt
-S2) Verify diversity across attributes like gender, style, or environment
-S3) Vary diversity by adjusting attribute distributions and resampling prompts
+- S1) Generate images from a simple prompt
+- S2) Verify diversity across attributes like gender, style, or environment
+- S3) Vary diversity by adjusting attribute distributions and resampling prompts
 
 ![interface](./interface.png)
 
